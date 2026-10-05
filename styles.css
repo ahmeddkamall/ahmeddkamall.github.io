@@ -120,8 +120,65 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+
+  #theme-btn {
+    margin-left: 0;
+  }
 }
 
 section ul li {
   margin-bottom: 4px;
+}
+
+/* ===== Assignment 2 additions ===== */
+
+/* Dark mode colors */
+body.dark {
+  --ink: #e6e9ec;
+  --muted: #a3adb6;
+  --accent: #4fc1c1;
+  --line: #2e3740;
+  --bg: #15191d;
+}
+
+#welcome {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+button {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background: var(--accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#theme-btn {
+  margin-left: auto;
+}
+
+.toggle-btn {
+  margin-left: 8px;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+
+.add-skill {
+  margin-top: 12px;
+}
+
+.add-skill input {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+body.dark button {
+  color: #15191d;
 }

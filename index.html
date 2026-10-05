@@ -13,7 +13,9 @@
     <div>
       <h1>Ahmed Kamal</h1>
       <p class="title">Business &amp; Technology Student | ServiceNow Intern at Capgemini</p>
+      <p id="welcome"></p>
     </div>
+    <button id="theme-btn">Dark Mode</button>
   </header>
 
   <main>
@@ -42,8 +44,9 @@
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <ul class="skills">
+      <h2>Skills <button class="toggle-btn" data-target="skills-content">Hide</button></h2>
+      <div id="skills-content">
+      <ul class="skills" id="skills-list">
         <li>ServiceNow Development</li>
         <li>Python</li>
         <li>C++</li>
@@ -58,6 +61,11 @@
         <li>Leadership</li>
       </ul>
       <p class="meta">Languages: Arabic (native), English (fluent), French (DELF C1)</p>
+      <div class="add-skill">
+        <input type="text" id="skill-input" placeholder="Enter a skill">
+        <button id="add-skill-btn">Add</button>
+      </div>
+      </div>
     </section>
 
     <section>
@@ -86,7 +94,8 @@
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2>Projects <button class="toggle-btn" data-target="projects-content">Hide</button></h2>
+      <div id="projects-content">
 
       <h3>AI in Business</h3>
       <p>Reverse engineered XLMiner and built a customizable Python analytics tool for predictive business analysis.</p>
@@ -96,11 +105,12 @@
 
       <h3>Agile Automation System</h3>
       <p>Developed a fully automated Agile workflow system integrating business and technical requirements.</p>
+      </div>
     </section>
 
     <section>
-      <h2>Achievements &amp; Leadership</h2>
-      <ul>
+      <h2>Achievements &amp; Leadership <button class="toggle-btn" data-target="achievements-content">Hide</button></h2>
+      <ul id="achievements-content">
         <li>President, Business Association, Onsi Sawiris School of Business, AUC (2025/2026)</li>
         <li>Student Associations Representative, Constitutional Review Committee, AUC</li>
         <li>Head of Logistics, Student Union, AUC (Retro concert by Amr Diab)</li>
@@ -124,5 +134,6 @@
     <p>&copy; 2026 Ahmed Kamal</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
